@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Height of each info item list -->
+    <dimen name="list_item_height">120dp</dimen>
+    <!-- default screen margin is 88 dp. To be slightly bigger to shoe more detail of image -->
+</resources>

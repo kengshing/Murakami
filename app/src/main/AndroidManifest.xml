@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InfoActivity"
+            android:label="@string/activity_info"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/InfoTheme"></activity>
     </application>
 
 </manifest>
