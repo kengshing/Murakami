@@ -3,9 +3,11 @@ package net.orcacreation.murakami;
 import android.content.Intent;
 import android.support.v4.app.NavUtils;
 import android.support.v4.app.TaskStackBuilder;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.support.design.widget.TabLayout;
 
 public class InfoActivity extends AppCompatActivity {
 
@@ -46,6 +48,23 @@ public class InfoActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = findViewById(R.id.viewpager);
 
+        // Create an adapter that knows which fragment should be shown on each page
+        CatagoryAdaptor adaptor = new CatagoryAdaptor(this, getSupportFragmentManager());
+
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adaptor);
+
+        //find the tab layout that shows the tabs
+        TabLayout tabLayout = findViewById(R.id.tabs);
+
+        //connect the tab layout with the view pager. This will
+        // 1. update the tab layout when the view pager is swipes
+        // 2. update the view pager when a tab is selected
+        // 3. ser the tab layout's tab names with the view pager's adapter's titles
+        // by calling onPageTitle()
+        tabLayout.setupWithViewPager(viewPager);
     }
 }

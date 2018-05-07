@@ -3,6 +3,7 @@ package net.orcacreation.murakami;
 class Info {
 
     private static final int NO_RESOURCE_PROVIDED = -1;
+    private static final int NO_IMAGE_PROVIDED = -2;
     private final String mInfoName;
     private final String mInfoDescription;
     private int mImageResourceId;
@@ -12,12 +13,14 @@ class Info {
     Info(String infoName, String infoDescription, int imageResourceId) {
         mInfoName = infoName;
         mInfoDescription = infoDescription;
+        mImageResourceId = NO_IMAGE_PROVIDED;
         mImageResourceId = imageResourceId;
     }
 
     Info(String infoName, String infoDescription, int imageResourceId, int resourceId) {
         mInfoName = infoName;
         mInfoDescription = infoDescription;
+        mImageResourceId = NO_IMAGE_PROVIDED;
         mImageResourceId = imageResourceId;
         mResourceId = resourceId;
     }
@@ -44,6 +47,12 @@ class Info {
 
     public boolean hasResource() {
         return mResourceId != NO_RESOURCE_PROVIDED;
+    }
+
+    // Provision for info that does not ahve image
+
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
     @Override

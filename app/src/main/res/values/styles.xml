@@ -20,7 +20,7 @@
     <style name="InfoTextStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">?android:textAppearanceLarge</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
     </style>
 
 
@@ -28,7 +28,19 @@
     <style name="DescriptionTextStyle">
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">?android:textAppearanceMedium</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for catagory tabs. -->
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <!-- Style for catagory text appearance. -->
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#A8A19E</item>
     </style>
 
 </resources>
