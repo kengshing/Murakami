@@ -20,8 +20,10 @@ class CatagoryAdaptor extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return new BookFragment();
-            default:
+            case 1:
                 return new SongFragment();
+            default:
+                return new LocationFragment();
         }
     }
 
@@ -31,13 +33,15 @@ class CatagoryAdaptor extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 return mContext.getString(R.string.category_books);
-            default:
+            case 1:
                 return mContext.getString(R.string.category_songs);
+            default:
+                return mContext.getString(R.string.category_places);
         }
     }
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 }

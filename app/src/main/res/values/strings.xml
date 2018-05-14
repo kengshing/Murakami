@@ -18,4 +18,13 @@
     <!-- Category name for ref [CHAR LIMIT=20] -->
     <string name="category_references">References</string>
 
+    <!-- GeoLocation for Islay [CHAR LIMIT=20] -->
+    <string name="location_islay">geo:55.7363,-6.1771?z=10</string>
+
+    <!-- GeoLocation for Greece [CHAR LIMIT=20] -->
+    <string name="location_greece">geo:39.0742,21.8243?z=7</string>
+
+    <!-- GeoLocation for Sydney [CHAR LIMIT=20] -->
+    <string name="location_sydney">geo:-33.8688,151.2093?z=11</string>
+
 </resources>

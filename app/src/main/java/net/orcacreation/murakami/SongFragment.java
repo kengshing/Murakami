@@ -79,9 +79,9 @@ public class SongFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.info_list, container, false);
 
         final ArrayList<Info> infos = new ArrayList<>();
-        infos.add(new Info("When You Are Smiling", "Billie Holiday", R.drawable.img_billie_holiday, R.raw.miss, 1));
-        infos.add(new Info("I Fall In Love Too Easily", "Chet Baker", R.drawable.img_chet_baker, R.raw.you_said, 1));
-        infos.add(new Info("The Girl From Ipanema", "Stan Getz", R.drawable.img_stan_getz, R.raw.thousand_miles, 1));
+        infos.add(new Info("When You Are Smiling", "Billie Holiday", R.drawable.img_billie_holiday, R.raw.miss));
+        infos.add(new Info("I Fall In Love Too Easily", "Chet Baker", R.drawable.img_chet_baker, R.raw.you_said));
+        infos.add(new Info("The Girl From Ipanema", "Stan Getz", R.drawable.img_stan_getz, R.raw.thousand_miles));
 
         InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_song);
         ListView listView = rootView.findViewById(R.id.info_list);
