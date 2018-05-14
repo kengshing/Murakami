@@ -6,16 +6,16 @@
     <color name="colorTanBackground">#FFF7DA</color>
     <color name="colorContrast">#8db600</color>
 
-    <!-- Background color for the numbers category -->
+    <!-- Background color for the book category -->
     <color name="category_book">#FD8E09</color>
 
-    <!-- Background color for the family members category -->
+    <!-- Background color for the song category -->
     <color name="category_song">#379237</color>
 
-    <!-- Background color for the colors category -->
+    <!-- Background color for the place category -->
     <color name="category_place">#8800A0</color>
 
-    <!-- Background color for the phrases category -->
-    <color name="category_ref">#16AFCA</color>
+    <!-- Background color for the web category -->
+    <color name="category_web">#16AFCA</color>
 
 </resources>

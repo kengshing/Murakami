@@ -19,16 +19,16 @@
     <!-- Style for info text. -->
     <style name="InfoTextStyle">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
 
     <!-- Style for description text. -->
     <style name="DescriptionTextStyle">
         <item name="android:textColor">@android:color/white</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">italic</item>
     </style>
 
     <!-- Style for catagory tabs. -->

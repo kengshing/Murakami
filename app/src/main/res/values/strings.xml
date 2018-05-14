@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Murakami</string>
-    <string name="activity_info">Info</string>
+    <string name="activity_info">All You Need To Know</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -16,7 +16,7 @@
     <string name="category_places">Places</string>
 
     <!-- Category name for ref [CHAR LIMIT=20] -->
-    <string name="category_references">References</string>
+    <string name="category_web">Web</string>
 
     <!-- GeoLocation for Islay [CHAR LIMIT=20] -->
     <string name="location_islay">geo:55.7363,-6.1771?z=10</string>
@@ -26,5 +26,23 @@
 
     <!-- GeoLocation for Sydney [CHAR LIMIT=20] -->
     <string name="location_sydney">geo:-33.8688,151.2093?z=11</string>
+
+    <!-- Website for Official Site [CHAR LIMIT=20] -->
+    <string name="web_official">http://www.harukimurakami.com</string>
+
+    <!-- Website for Wikipedia [CHAR LIMIT=20] -->
+    <string name="web_wiki">https://en.wikipedia.org/wiki/Haruki_Murakami</string>
+
+    <!-- Website for Official Site [CHAR LIMIT=20] -->
+    <string name="web_newyorker">https://www.newyorker.com/contributors/haruki-murakami</string>
+
+    <!-- Wiki website for dance dance dance [CHAR LIMIT=20] -->
+    <string name="web_dance_dance_dance">https://en.wikipedia.org/wiki/Dance_Dance_Dance_(novel)</string>
+
+    <!-- Wiki website for the wind up bird chronicle [CHAR LIMIT=20] -->
+    <string name="web_the_wind_up_bird_chronicle">https://en.wikipedia.org/wiki/The_Wind-Up_Bird_Chronicle</string>
+
+    <!-- Wiki website for the wind up bird chronicle [CHAR LIMIT=20] -->
+    <string name="web_kafka_on_the_shore">https://en.wikipedia.org/wiki/Kafka_on_the_Shore</string>
 
 </resources>

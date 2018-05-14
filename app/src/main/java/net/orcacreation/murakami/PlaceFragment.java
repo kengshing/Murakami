@@ -25,10 +25,10 @@ import static android.media.AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class LocationFragment extends Fragment {
+public class PlaceFragment extends Fragment {
 
 
-    public LocationFragment() {
+    public PlaceFragment() {
         // Required empty public constructor
     }
 

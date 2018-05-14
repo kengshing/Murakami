@@ -1,6 +1,5 @@
 package net.orcacreation.murakami;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,16 +9,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BookFragment extends Fragment {
+public class WebFragment extends Fragment {
 
-    public BookFragment() {
+
+    public WebFragment() {
         // Required empty public constructor
     }
 
@@ -30,11 +29,11 @@ public class BookFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.info_list, container, false);
 
         final ArrayList<Info> infos = new ArrayList<>();
-        infos.add(new Info("Dance, Dance, Dance", "Novel, 1988", R.drawable.img_dance_dance_dance, R.string.web_dance_dance_dance));
-        infos.add(new Info("The Wind Up Bird Chronicle", "Novel, 1994-1995", R.drawable.img_the_wind_up_bird_chronicle, R.string.web_the_wind_up_bird_chronicle));
-        infos.add(new Info("Kafka On The Shore", "Novel, 2002", R.drawable.img_kafka_on_the_shore, R.string.web_kafka_on_the_shore));
+        infos.add(new Info("Official Site", "http://www.harukimurakami.com", R.drawable.img_official_site, R.string.web_official));
+        infos.add(new Info("Wikipedia", "https://en.wikipedia.org/wiki/Haruki_Murakami", R.drawable.img_wiki, R.string.web_wiki));
+        infos.add(new Info("The New Yorker", "https://www.newyorker.com/contributors/haruki-murakami", R.drawable.img_the_new_yorker, R.string.web_newyorker));
 
-        InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_book);
+        InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_web);
         ListView listView = rootView.findViewById(R.id.info_list);
         listView.setAdapter(itemAdaptor);
 
@@ -54,4 +53,6 @@ public class BookFragment extends Fragment {
 
         return rootView;
     }
+
+
 }
