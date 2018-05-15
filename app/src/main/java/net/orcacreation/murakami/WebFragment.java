@@ -22,7 +22,6 @@ public class WebFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,6 +31,10 @@ public class WebFragment extends Fragment {
         infos.add(new Info("Official Site", "http://www.harukimurakami.com", R.drawable.img_official_site, R.string.web_official));
         infos.add(new Info("Wikipedia", "https://en.wikipedia.org/wiki/Haruki_Murakami", R.drawable.img_wiki, R.string.web_wiki));
         infos.add(new Info("The New Yorker", "https://www.newyorker.com/contributors/haruki-murakami", R.drawable.img_the_new_yorker, R.string.web_newyorker));
+        infos.add(new Info("IMDb", "https://www.imdb.com/name/nm1633142", R.drawable.img_imdb, R.string.web_imdb));
+        infos.add(new Info("Spotify", "https://open.spotify.com/user/pijamasurf/playlist/3P52ALVSK8p8FaQ2NmAwYr", R.drawable.img_spotify, R.string.web_spotify));
+        infos.add(new Info("Murakami's Music", "http://haruki-music.com/", R.drawable.img_murakamis_music, R.string.web_murakamis_music));
+
 
         InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_web);
         ListView listView = rootView.findViewById(R.id.info_list);
@@ -53,6 +56,4 @@ public class WebFragment extends Fragment {
 
         return rootView;
     }
-
-
 }

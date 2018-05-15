@@ -32,16 +32,16 @@ public class PlaceFragment extends Fragment {
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.info_list, container, false);
 
         final ArrayList<Info> infos = new ArrayList<>();
-        infos.add(new Info("Islay", "If Our Language Is Whisky", R.drawable.img_islay, R.string.location_islay));
-        infos.add(new Info("Greece", "Rain, Burning Sun", R.drawable.img_greece, R.string.location_greece));
-        infos.add(new Info("Sydney", "Sydney!", R.drawable.img_sydney, R.string.location_sydney));
+        infos.add(new Info("Islay, Scotland", "If Our Language Is Whisky", R.drawable.img_islay, R.string.location_islay));
+        infos.add(new Info("Athos, Greece", "Rain, Burning Sun", R.drawable.img_athos, R.string.location_athos));
+        infos.add(new Info("Sydney, Australia", "Sydney!", R.drawable.img_sydney, R.string.location_sydney));
+        infos.add(new Info("Rome, Italy", "The Distant Drum", R.drawable.img_rome, R.string.location_rome));
 
         InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_place);
         ListView listView = rootView.findViewById(R.id.info_list);
@@ -58,12 +58,8 @@ public class PlaceFragment extends Fragment {
                 if (locationIntent.resolveActivity(getActivity().getPackageManager()) != null) {
                     startActivity(locationIntent);
                 }
-
             }
         });
-
         return rootView;
     }
-
-
 }
