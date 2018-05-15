@@ -7,21 +7,15 @@ class Info {
     private final String mInfoName;
     private final String mInfoDescription;
     private int mImageResourceId;
-    private int mResourceId = NO_RESOURCE_PROVIDED;
+    private int mResourceId;
 
-
-    Info(String infoName, String infoDescription, int imageResourceId) {
-        mInfoName = infoName;
-        mInfoDescription = infoDescription;
-        mImageResourceId = NO_IMAGE_PROVIDED;
-        mImageResourceId = imageResourceId;
-    }
 
     Info(String infoName, String infoDescription, int imageResourceId, int resourceId) {
         mInfoName = infoName;
         mInfoDescription = infoDescription;
         mImageResourceId = NO_IMAGE_PROVIDED;
         mImageResourceId = imageResourceId;
+        mResourceId = NO_RESOURCE_PROVIDED;
         mResourceId = resourceId;
     }
 
@@ -50,19 +44,10 @@ class Info {
         return mResourceId != NO_RESOURCE_PROVIDED;
     }
 
-    // Provision for info that does not ahve image
+    // Provision for info that does not have image
 
     public boolean hasImage() {
         return mImageResourceId != NO_IMAGE_PROVIDED;
     }
 
-    @Override
-    public String toString() {
-        return "Info{" +
-                "mInfoName='" + mInfoName + '\'' +
-                ", mInfoDescription='" + mInfoDescription + '\'' +
-                ", mImageResourceId='" + mImageResourceId +
-                ", mResourceId='" + mResourceId +
-                '}';
-    }
 }

@@ -10,7 +10,7 @@ class CatagoryAdaptor extends FragmentPagerAdapter {
 
     private final Context mContext;
 
-    public CatagoryAdaptor(Context context, FragmentManager fm) {
+    CatagoryAdaptor(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
