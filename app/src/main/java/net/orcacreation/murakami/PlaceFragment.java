@@ -42,6 +42,7 @@ public class PlaceFragment extends Fragment {
         infos.add(new Info("Athos, Greece", "Rain, Burning Sun", R.drawable.img_athos, R.string.location_athos));
         infos.add(new Info("Sydney, Australia", "Sydney!", R.drawable.img_sydney, R.string.location_sydney));
         infos.add(new Info("Rome, Italy", "The Distant Drum", R.drawable.img_rome, R.string.location_rome));
+        infos.add(new Info("Boston, USA", "What I Talk About When I Talk About Running", R.drawable.img_boston, R.string.location_boston));
 
         InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_place);
         ListView listView = rootView.findViewById(R.id.info_list);

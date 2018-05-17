@@ -82,6 +82,9 @@ public class SongFragment extends Fragment {
         infos.add(new Info("When You Are Smiling", "Billie Holiday", R.drawable.img_billie_holiday, R.raw.miss));
         infos.add(new Info("I Fall In Love Too Easily", "Chet Baker", R.drawable.img_chet_baker, R.raw.you_said));
         infos.add(new Info("The Girl From Ipanema", "Stan Getz", R.drawable.img_stan_getz, R.raw.thousand_miles));
+        infos.add(new Info("Over The Rainbow", "Sarah Vaughan", R.drawable.img_sarah_vaughan, R.raw.in_the_name_of_love));
+        infos.add(new Info("A Night In Tunisia", "Dizzy Gillespie", R.drawable.img_dizzy_gillespie, R.raw.ex_is_like_dream));
+        infos.add(new Info("Black And Blue", "Louis Armstrong", R.drawable.img_louis_armstrong, R.raw.walk_with_you));
 
         InfoAdaptor itemAdaptor = new InfoAdaptor(getActivity(), R.layout.info_list_item, infos, R.color.category_song);
         ListView listView = rootView.findViewById(R.id.info_list);

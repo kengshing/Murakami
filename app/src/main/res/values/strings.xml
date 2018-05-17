@@ -16,6 +16,7 @@
     <string name="location_athos">geo:40.2645,24.2153?z=10</string>
     <string name="location_sydney">geo:-33.8688,151.2093?z=11</string>
     <string name="location_rome">geo:41.9028,12.4964?z=11</string>
+    <string name="location_boston">geo:42.3601,-71.0589?z=12</string>
 
     <!-- Website for WebFragment [CHAR LIMIT=NA] -->
     <string name="web_official">http://www.harukimurakami.com</string>
